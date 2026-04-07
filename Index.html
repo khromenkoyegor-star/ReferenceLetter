@@ -1,0 +1,292 @@
+```html
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентація компанії | ПОК Вітряки</title>
+    <!-- Підключення Tailwind CSS для сучасного та чистого дизайну -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Дуже світлий сіро-синій фон */
+            color: #334155;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-200 selection:text-blue-900">
+
+    <!-- Верхній колонтитул / Шапка документа -->
+    <header class="bg-slate-900 text-white py-16 px-4 relative overflow-hidden">
+        <!-- Декоративний елемент фону (технологічна сітка/лінії) -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="flex items-center gap-3 mb-6">
+                <!-- Іконка вентилятора/інженерії -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M12 12c-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6 0 3.3-2.7 6-6 6z"/><path d="M12 12c3.3 0 6 2.7 6 6 0 3.3-2.7 6-6 6-3.3 0-6-2.7-6-6 0-3.3 2.7-6 6 6z"/><path d="M12 12c-3.3 0-6 2.7-6 6 0 3.3 2.7 6 6 6 3.3 0 6-2.7 6-6 0-3.3-2.7-6-6-6z"/><path d="M12 12c3.3 0 6-2.7 6-6 0-3.3-2.7-6-6-6-3.3 0-6 2.7-6 6 0 3.3 2.7 6 6 6z"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+                <span class="text-blue-400 font-semibold tracking-wider uppercase text-sm">Інженерні рішення</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">ПОК Вітряки</h1>
+            <p class="text-lg md:text-xl text-slate-300 font-light border-l-4 border-blue-500 pl-4">Професійний монтаж та обслуговування систем промислової вентиляції.</p>
+        </div>
+    </header>
+
+    <!-- Основний контейнер документа -->
+    <main class="max-w-4xl mx-auto px-4 py-12 -mt-8 relative z-20">
+        
+        <div class="glass-panel rounded-2xl shadow-xl border border-slate-200 p-6 md:p-12 mb-12">
+            
+            <!-- Вступ -->
+            <div class="prose max-w-none mb-12 text-lg text-slate-700 leading-relaxed">
+                <p><strong>Шановний Замовник!</strong></p>
+                <p>Компанія ПОК Вітряки (ФОП Хроменко Зореслава Вікторівна), пропонує свої послуги по монтажу систем вентиляції. Для початку, пропоную ознайомитися з нашими кейсам та командою:</p>
+            </div>
+
+            <!-- Секція Команда -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 border-b pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    Наша команда
+                </h2>
+                
+                <div class="space-y-4 text-slate-700 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <p class="mb-2"><strong>1. Керівник робіт - Хроменко Єгор.</strong> Освіта - інженер теплоенергетик (магістр). Досвід роботи у сфері вентиляції - з 2021 до 2024 інженер-проєктувальник у ТОВ майстерклімат (Черкаси), 2024-наші дні - власна підприємницька діяльність. Статус - броньований.<br>
+                    <span class="text-sm text-slate-500 mt-1 block border-l-2 border-slate-300 pl-3">Реалізовані обʼєкти у ролі інженера проектувальника: Замовник LNZ Group, цех заморозки овочів та фруктів, завод Tevitta(м.Шпола) загальна продуктивність систем вентиляції 50 000 м³/год; Замовник Sweetondale,цех плавлення базальтової вати, завод Техноніколь(м.Черкаси) загальна продуктивність систем вентиляції 15 000 м³/год. Та інше.</span></p>
+                    
+                    <p><strong>2. Іванченко Ярослав</strong> - бригадир, монтажник вентиляції. Статус - виключений з ВО ,основна команда.</p>
+                    <p><strong>3. Пархоменко Дмито</strong> - монтажник вентиляції. Статус - виключений з ВО(наявне УБД), основна команда.</p>
+                    <p><strong>4. Вдовенко Микола</strong> - провідний інженер ЧТКЕ, монтажник вентиляції. Статус - броньований, резервна команда.</p>
+                    <p><strong>5. Коваленко Євгеній</strong> - електрик, КВПіА Статус - підлягає призову, резервна команда.</p>
+                    <p><strong>6. Дувінський Олександр</strong> - електрозварювальник. Статус - виключений за віком, резервна команда.</p>
+                    
+                    <div class="pt-4 mt-4 border-t border-slate-200">
+                        <p class="font-medium mb-3 text-slate-800">Партнери які долучаються при потребі під час виконання робіт:</p>
+                        <p><strong>7. Валерій Внуков</strong> - промисловий альпінізм, герметзація отворів. Статус - відстрочка.</p>
+                        <p><strong>8. Залізняк Сергій</strong> - промислове алмазне буріння. Статус - відстрочка.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Секція Кейси -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 border-b pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    Реалізовані обʼєкти за останні 2 роки
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Кейс 1 -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-slate-700 leading-relaxed mb-4">
+                                    Припливно-витяжна вентиляція чистої зони завод Юрія-Фарм (Черкаси), суб-підряд на фірму OCTAVIS Engineering. Всього змонтовано повітропроводів +- 750 м². Загальний бюджет на матеріали та роботи 1.8 млн грн з ПДВ. План та фото з монтажа додано у файлі «кейс Юрія фарм». Монтаж виконувався в умовах обмеженого простору і жорстких термінів. Після успішної реалізації цього обʼєкту, навіть уявити важко що може бути ще складніше.
+                                </p>
+                                <a href="1.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                    Відкрити: Кейс Юрія фарм
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 2 -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-slate-700 leading-relaxed mb-4">
+                                    Витяжна вентиляція зони фудкоту ТРЦ Екватор для мережі Велмарт (м.Чернівці). Субпідряд на фірму СК АВІК. Загальна продуктивність систем 9000 м³/год. Родзинкою цього обʼєкту став монтаж утеплених свічок по фасаду приміщення без можливості нормального кріплення до стіни. Схема, фото та рішення проблеми у файлі «Кейс ТРЦ ЕКВАТОР Велмарт».
+                                </p>
+                                <a href="2.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                    Відкрити: Кейс ТРЦ ЕКВАТОР Велмарт
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 3 -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-slate-700 leading-relaxed mb-4">
+                                    Вентиляція та кондиціонування головного офісу Київстар (весь 11 поверх). Суб-підряд СК АВІК. План та фото з обʼєкту у файлі «кейс Київстар 11 поверх»
+                                </p>
+                                <a href="3.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                    Відкрити: Кейс Київстар 11 поверх
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 4 -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-slate-700 leading-relaxed mb-4">
+                                    Витяжна вентиляція фудкорту Велмарт у ТРЦ Плазма (м.Черкаси). Суб-підряд БК «Грифон». Особливість цього обʼєкта, став вимушений монтаж свічки з лісів на вулиці при температурі -7* С. План та фото у файлі «кейс Плазма».
+                                </p>
+                                <a href="4.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                    Відкрити: Кейс Плазма
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кейс 5 -->
+                    <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-100 text-blue-600 p-2 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-slate-700 leading-relaxed mb-4">
+                                    Вентиляційна система магазину Велмарт за адресою Саперно-Слобідська 10 (м.Київ). Суб-підряд СК АВІК. Особливість цього обʼєкта стала доставка вентилятора 130 кг до місця встановлення. Після отримання відмови від ОСББ у прорізанні дверного косяка з подальшим відновленням, ми були вимушені зробити новий отвір у стіні через який і протягнули обладнання. План та фото у файлі «Кейс Саперно-Слобідська Велмарт»
+                                </p>
+                                <a href="5.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg font-medium transition-colors text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                                    Відкрити: Кейс Саперно-Слобідська Велмарт
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Додаткова інформація -->
+                     <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-slate-700">
+                        <p class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 shrink-0 mt-1"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            <span>Окрім монтажних робіт наша компанія займається ще й обслуговування вентиляційних систем і являється постійним підрядником ТОВ Фудком (Велмарт). Більше інформації на нашому сайті: <a href="https://pokvitryaky.com.ua" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">pokvitryaky.com.ua</a></span>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Секція Чому ми -->
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3 border-b pb-4 text-center justify-center bg-slate-900 text-white py-4 rounded-xl shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                    ЧОМУ САМЕ МИ?
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    
+                    <!-- Перевага 1 -->
+                    <div class="p-5 bg-white border border-slate-100 rounded-xl shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 font-bold text-sm">1</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                Наявність броні у основної команди, що дає змогу проїхати через усі блок пости та вільно пересуватися, не ризикуючи що працівників мобілізують і роботи зірвуться.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Перевага 2 -->
+                    <div class="p-5 bg-white border border-slate-100 rounded-xl shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 font-bold text-sm">2</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                Цілеспрямованість. Коли ми беремось за роботу - доводимо її до кінця і в термін, залучаючи усі потрібні ресурси. Про це свідчить кейс Юрія Фарм, ТРЦ Екватор та ТРЦ Плазма.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Перевага 3 -->
+                    <div class="p-5 bg-white border border-slate-100 rounded-xl shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 font-bold text-sm">3</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                Широка база колег у сфері вентиляції. У випадку сюжетного повороту у ході монтажу, з яким ми не стикалися, є можливість звернутися за консультацією до колег по всій Україні і отримати пораду у складній ситуації.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Перевага 4 -->
+                    <div class="p-5 bg-white border border-slate-100 rounded-xl shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 font-bold text-sm">4</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                Наявність медичної картки у працівників основної бригади.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Перевага 5 -->
+                    <div class="p-5 bg-white border border-slate-100 rounded-xl shadow-sm hover:border-blue-200 transition-colors">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 font-bold text-sm">5</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                Наявний резервний бюджет на дозакупівлю потрібних інструментів та обладнання в якому може виникнути потреба.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Перевага 6 -->
+                    <div class="p-5 bg-blue-50 border border-blue-200 rounded-xl shadow-sm">
+                        <div class="flex gap-4">
+                            <div class="text-blue-600 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <p class="text-slate-800 text-sm leading-relaxed font-medium">
+                                Гарантія що обʼєкт буде реалізовано до самого фінішного етапу. У випадку форс-мажору у разі якого наша команда не зможе реалізувати обʼєкт до кінця, нас підстрахують наші партнери і закінчать роботу без зміни вартості. Цей момент буде прописано в договорів в розділі Гарантії.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Футер -->
+        <footer class="text-center text-slate-500 text-sm">
+            <p>&copy; 2026 ПОК Вітряки (ФОП Хроменко З.В.). Всі права захищено.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+
+
+```
